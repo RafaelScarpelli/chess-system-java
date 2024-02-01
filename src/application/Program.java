@@ -15,21 +15,27 @@ public class Program {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("CHESS GAME");
-		System.out.println();
 		ChessMatch chessMatch = new ChessMatch();
 		
 		while (true) {
 			try {
 				
 				UI.clearScreen();
+				System.out.println();
 				UI.printBoard(chessMatch.getPieces());
 				System.out.println();
 				System.out.print("Source: ");
 				ChessPosition source = UI.readChessPosition(sc);
+				System.out.println();
+				
+				boolean[][] possibleMoves = chessMatch.possibleMoves(source);
+				UI.clearScreen();
+				UI.printBoard(chessMatch.getPieces(), possibleMoves);
 			
 				System.out.println();
 				System.out.print("Target: ");
 				ChessPosition target = UI.readChessPosition(sc);
+				System.out.println();
 				
 				ChessPiece capturedPiece = chessMatch.performmChessMove(source, target);
 			}
