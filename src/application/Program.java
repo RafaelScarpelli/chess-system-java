@@ -55,6 +55,7 @@ public class Program {
 				sc.nextLine();
 			}
 			
+			
 		}
 		UI.clearScreen();
 		UI.printMatch(chessMatch, captured);
