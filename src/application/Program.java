@@ -14,6 +14,7 @@ public class Program {
 
 	public static void main(String[] args) {
 
+		//START
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("CHESS GAME");
