@@ -16,7 +16,7 @@ public class Program {
 
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("CHESS GAME");
+		System.out.println("----- CHESS -----");
 		ChessMatch chessMatch = new ChessMatch();
 		List<ChessPiece> captured = new ArrayList<>();
 		
